@@ -1,0 +1,559 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import "https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;800;900&display=swap";
+
+
+body {
+  font-family: Lexend, sans-serif;
+}
+
+p {
+  font-family: Lexend, sans-serif;
+  font-weight: 200;
+}
+
+/* FONT FAMILIES */
+/* headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Lexend, sans-serif;
+}
+
+/* fonts in meta  buttons etc*/
+article footer,
+article footer p,
+p.meta,
+.btn,
+.pager,
+.pagination {
+  font-family: Lexend, sans-serif;
+}
+
+/* fonts in widget */
+.widget {
+  font-family: Lexend, sans-serif;
+  font-weight: bold;
+}
+
+.widget h4,
+.widget h5,
+.widget h6 {
+  font-family: Lexend, sans-serif;
+}
+
+/* normal text font  in text widget*/
+.widget .textwidget {
+  font-family: Lexend, sans-serif;
+  font-weight: normal;
+}
+
+/* fonts in footer*/
+.container-fluid>footer {
+  font-family: Lexend, sans-serif;
+  font-weight: normal;
+}
+
+/* fonts in navigation bar */
+.navbar {
+  font-family: Lexend, sans-serif;
+}
+
+p {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+/*removed imported css */
+/* FONT SIZES: */
+body {
+  font-family: Lexend, sans-serif;
+  line-height: 1.2;
+  font-size: 100%;
+}
+
+p.meta {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+}
+
+/*depending on teh font used */
+p.tags {
+  font-size: 0.8em;
+  line-height: 160%;
+  margin: 0;
+  padding: 0;
+}
+
+.widget p,
+.comment-text p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.4em;
+}
+
+/* p widget and comment */
+pre {
+  font-size: 0.85em;
+  line-height: 1.1em;
+}
+
+blockquote p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+h3 {
+  font-size: 1.17em;
+  line-height: 1.2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1.2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+h5 {
+  font-size: 0.83em;
+  line-height: 1.2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+h6 {
+  font-size: 0.75em;
+  line-height: 1.2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.widget,
+.widget li {
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+
+/* slightly larger */
+.widget p {
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+/* slightly larger */
+.widget h4 {
+  padding-top: 0.60em;
+  padding-bottom: 0.2em;
+}
+
+/* sets the top of h4 equal to top of h2 (article) */
+.label {
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+/* labels smaller: fixed  */
+#tag-cloud .label {
+  font-size: 9px !important;
+  font-weight: normal;
+}
+
+.pager,
+.pagination {
+  font-size: 0.7em;
+  font-weight: normal;
+}
+
+/* navigation  labels smaller: fixed  */
+#comments {
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-bottom: 0;
+}
+
+/*h3 header for comment list */
+.commentlist {
+  font-size: 87.5%;
+}
+
+/*make all commenst a little smaller */
+.navbar {
+  font-size: 0.8em;
+}
+
+/*overrrides of standard style font wise */
+/*#tag-cloud{line-height:200% ;} */
+/* in widgets lineheight 1 em?  .widget li becaaue lineheight is fixed in bootstrap-min.css*/
+/*.widget                      { font-size: 90%;} */
+/* .widgettitle     { padding-top: 0.4em; padding-bottom:0;} */
+/*.tags .label               { font-size: 0.7em !important;   font-weight:normal;   } */
+/* labels smaller: fixed sizes */
+dark:h1 {
+  @apply text-white
+}
+
+.icons-logo {
+  @apply cursor-pointer mb-3 text-border
+}
+
+.icons-logo:hover {
+  @apply text-borderDark ease-in duration-300;
+}
+
+
+
+.btn-primary {
+  @apply rounded-md flex space-x-2 w-24 h-10 font-normal text-sm leading-3 border duration-150 justify-center items-center cursor-pointer
+}
+
+.icon-html {
+  cursor: pointer;
+
+  &:hover {
+    color: #FF7043;
+  }
+}
+
+.icon-css {
+  cursor: pointer;
+
+  &:hover {
+    color: #1877F2;
+  }
+}
+
+.icon-javascript {
+  cursor: pointer;
+
+  &:hover {
+    color: #FFFF00;
+  }
+}
+
+.icon-php {
+  cursor: pointer;
+
+  &:hover {
+    color: #304FFE;
+  }
+}
+
+.icon-mysqli {
+  cursor: pointer;
+
+  &:hover {
+    color: #42A5F5;
+  }
+}
+
+.icon-react {
+  cursor: pointer;
+
+  &:hover {
+    color: #2979FF;
+  }
+}
+
+.icon-nodejs {
+  cursor: pointer;
+
+  &:hover {
+    color: #00C853;
+  }
+}
+
+.icon-nextjs {
+  cursor: pointer;
+
+  &:hover {
+    color: aqua;
+  }
+}
+
+.icon-bootstrap {
+  cursor: pointer;
+
+  &:hover {
+    color: #2979FF;
+  }
+}
+
+.icon-react-native {
+  cursor: pointer;
+
+  &:hover {
+    color: #303F9F;
+  }
+}
+
+.icon-sass {
+  cursor: pointer;
+
+  &:hover {
+    color: #EC407A;
+  }
+}
+
+.icon-typescript {
+  cursor: pointer;
+
+  &:hover {
+    color: #1976D2;
+  }
+}
+
+.icon-mongodb {
+  cursor: pointer;
+
+  &:hover {
+    color: #00C853;
+  }
+}
+
+.icon-tailwind {
+  cursor: pointer;
+
+  &:hover {
+    color: #2196F3;
+  }
+}
+
+.icon-codeigniter {
+  cursor: pointer;
+
+  &:hover {
+    color: #F4511E;
+  }
+}
+
+.icon-laravel {
+  cursor: pointer;
+
+  &:hover {
+    color: #D32F2F;
+  }
+}
+
+.icon-Materialui {
+  cursor: pointer;
+
+  &:hover {
+    color: #1976D2;
+  }
+}
+
+.icon-aws {
+  cursor: pointer;
+
+  &:hover {
+    color: #3949AB;
+  }
+}
+
+.icon-npm {
+  cursor: pointer;
+
+  &:hover {
+    color: #B71C1C;
+  }
+}
+
+.icon-yarn {
+  cursor: pointer;
+
+  &:hover {
+    color: #1976D2;
+  }
+}
+
+.Profile-pick {
+
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .dark &:hover {
+    box-shadow: rgba(254, 254, 254, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+}
+
+.dark {
+
+  .icon-github {
+    cursor: pointer;
+
+    &:hover {
+      color: #283593;
+    }
+  }
+
+  .icon-linkedin {
+    cursor: pointer;
+
+    &:hover {
+      color: #3D5AFE;
+    }
+  }
+
+  .icon-twitter {
+    cursor: pointer;
+
+    &:hover {
+      color: #03A9F4;
+    }
+  }
+
+  .icon-instagram {
+    cursor: pointer;
+
+    &:hover {
+      color: #F4511E;
+    }
+  }
+
+  .icon-mail {
+    cursor: pointer;
+
+    &:hover {
+      color: #1976D2;
+    }
+  }
+
+}
+
+.icon-github {
+  cursor: pointer;
+
+  &:hover {
+    color: #283593;
+  }
+}
+
+.icon-linkedin {
+  cursor: pointer;
+
+  &:hover {
+    color: #3D5AFE;
+  }
+}
+
+.icon-twitter {
+  cursor: pointer;
+
+  &:hover {
+    color: #03A9F4;
+  }
+}
+
+.icon-instagram {
+  cursor: pointer;
+
+  &:hover {
+    color: #F4511E;
+  }
+}
+
+.icon-mail {
+  cursor: pointer;
+
+  &:hover {
+    color: #1976D2;
+  }
+}
+
+.title {
+  background: linear-gradient(180deg,
+      rgba(74, 108, 247, 0.4) 0%,
+      rgba(74, 108, 247, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill: transparent;
+  opacity: 0.9;
+
+  font-weight: 800;
+  line-height: 1 !important;
+}
+
+.dark .hero-bg {
+  background: #141e30;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left,
+      #243b55,
+      #141e30);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left,
+      #243b55,
+      #141e30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.hero-bg {
+  background: #83a4d4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left,
+      #b6fbff,
+      #83a4d4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left,
+      #b6fbff,
+      #83a4d4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.name-font {
+  background: #000046;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left,
+      #1cb5e0,
+      #000046);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left,
+      #1cb5e0,
+      #000046);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: textShine 7s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  to {
+    background-position: 200%;
+  }
+}
